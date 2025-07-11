@@ -1,0 +1,26 @@
+<!-- Save this as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Box</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1 style="color: white; font-size: 48px;">Flappy Box</h1>
+    <p style="color: white; font-size: 24px;">High Score: <span id="highScore">0</span></p>
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="toggleShop()">🏦 Shop</button>
+  </div>
+  <div id="shopScreen" style="display: none">
+    <h2 style="color:white">Select Your Skin</h2>
+    <div id="skinList"></div>
+    <button onclick="toggleShop()">Back</button>
+  </div>
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
