@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Fredoka One', sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: url('https://i.imgur.com/3e5WfUw.png') no-repeat center center;
+  background-size: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
+
+button {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffca28;
+  color: #222;
+  cursor: pointer;
+  box-shadow: 0 4px #c0971f;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #ffd740;
+  transform: scale(1.05);
+}
+
+button:active {
+  box-shadow: 0 2px #c0971f;
+  transform: translateY(2px);
+}
+
+#startScreen, #shopScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+#skinList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.skin-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skin-option:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px white;
+}
